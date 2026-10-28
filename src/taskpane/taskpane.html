@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Market Pulse</title>
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Market Pulse</h1>
+    <p class="sub">A tiny learning add-in: sample data in, live updates streamed into the cells.</p>
+
+    <button id="insert">Insert sample data</button>
+    <p class="hint">Writes a small table (Ticker / Price / Change) starting at the selected cell — one batched write.</p>
+
+    <button id="toggle-live" disabled>Start live updates</button>
+    <p class="hint">Every 2 seconds the prices random-walk and the sheet updates — again, one batched write per tick, never one call per cell.</p>
+
+    <p id="status" role="status"></p>
+  </main>
+</body>
+</html>
