@@ -1,4 +1,44 @@
-node_modules/
-dist/
-*.log
+# ---- macOS ----
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.directory
+
+# ---- Node / npm ----
+node_modules/
+.npm
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# ---- Build output ----
+dist/
+out/
+*.tsbuildinfo
+
+# ---- Office add-in dev ----
+# (dev certs live in ~/.office-addin-dev-certs, not the project — nothing to ignore there)
+
+# ---- Logs & local env ----
+logs/
+*.log
+.env
+.env.local
+
+# ---- Editors / tooling ----
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# ---- Tests / coverage ----
+coverage/
